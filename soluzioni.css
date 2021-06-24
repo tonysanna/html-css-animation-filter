@@ -18,3 +18,54 @@
 .ex-3-square:hover {
     border-radius: 90%;
 }
+
+.ex-4-square {
+    transition: 2s;
+}
+.ex-4-square:hover {
+    opacity: 0;
+}
+
+.ex-5-square {
+    transition: 2s;
+}
+
+.ex-5-square:hover{
+    transform: scale(1.9);
+}
+
+.ex-5-square:active {
+    transform: scale(.9) ;
+}
+
+.ex-6-img:hover {
+    filter: grayscale(2);
+}
+
+.ex-7-img {
+    transition: 3s;
+}
+
+.ex-7-img:hover {
+    filter: grayscale(1.4) sepia(1.6);
+}
+
+.ex-8-img {
+    transition: 2s;
+}
+
+.ex-8-img:hover {
+    filter: saturate(1) invert(1);
+    border-radius: 15px;   
+}
+
+.ex-9-img {
+    transition: 2s;
+}
+
+.ex-9-img:hover {
+    filter: saturate(.6) sepia(.5);
+    border-radius: 15px;
+    transform: scale(1.5);
+}
+
