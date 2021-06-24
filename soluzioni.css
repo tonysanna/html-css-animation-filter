@@ -69,3 +69,103 @@
     transform: scale(1.5);
 }
 
+.ex-10-icon {
+    animation: spin 0.8s linear infinite reverse;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.ex-11-icon:hover {
+    animation: spinOff 0.8s linear infinite;
+}
+@keyframes spinOff {
+    0% { transform: rotate(0deg); }
+    80% { transform: rotate(270deg); }
+    100% {transform: rotate(0deg);}
+}
+
+.ex-12-button:hover .ex-12-top-white {
+    animation: spostaTop 1s linear;
+}
+
+@keyframes spostaTop {
+    0% {left:10%;}
+    50% {left:50%;}
+    100% {left:10%;} 
+}
+
+.ex-12-button:hover .ex-12-bottom-white {
+    animation: spostaBottom 1s linear;
+}
+
+@keyframes spostaBottom {
+    0% {right:10%;}
+    50% {right:50%;}
+    100% {right:10%;}   
+}
+
+.ex-13-button:hover .ex-13-top-white {
+    animation: movCompletely 2s linear;
+}
+
+@keyframes movCompletely {
+    0% {
+        left: 10%;
+        top: -10px;
+    }
+    30% {
+        left: calc(100% - 30px);
+        top: -10px;
+    }
+    45% {
+        left: calc(100% - 30px);
+        top: 100%;
+    }
+    75% {
+        left: 0;
+        top: 100%;
+    }
+    90% {
+        left: -15px;
+        top: -10px;
+    }
+    100% {
+        left: 10%;
+        top: -10px;
+    }
+}
+
+.ex-13-button:hover .ex-13-bottom-white {
+    animation: moveBottomCompletely 2s linear;
+}
+
+@keyframes moveBottomCompletely {
+    0% {
+        bottom: -10px;
+        right: 20%;
+    }
+    30% {
+        right: calc(100% - 30px);
+        bottom: -10px;
+    }
+    45% {
+        right: calc(100% - 30px);
+        bottom: 100%;
+    }
+    75% {
+        right: 0;
+        bottom: 100%;
+    }
+    90% {
+        right: -15px;
+        bottom: -10px;
+    }
+    100% {
+        bottom: -10px;
+        right: 20%;
+    }
+}
+
+
